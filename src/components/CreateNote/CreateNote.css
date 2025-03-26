@@ -1,0 +1,162 @@
+.CreateNote {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.CreateNote .heading-box {
+    width: 100%;
+    height: auto;
+    padding: 12px 15px;
+    gap: 20px;
+    background-color: #001F8B;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-shrink: 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.CreateNote .heading-box .Back{
+    width:25px;
+    height:25px;
+    cursor: pointer;
+    margin-right:-13px;
+    display: none;
+    background-color: transparent;
+}
+
+.CreateNote .content-box {
+    width: 100%;
+    flex-grow: 2;
+    padding: 30px 20px;
+    gap: 25px;
+    background-color: #DAE5F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y:hidden;
+    max-height: 455px;
+    min-height: 455px;
+}
+
+.CreateNote .entry-box {
+    width: 100%;
+    height: 202px;
+    border: 2px solid #001F8B;
+    bottom: 0;
+    left: 0;
+    background-color: #001F8B;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    position: sticky;
+    bottom: 0;
+    z-index: 10;
+}
+
+.CreateNote .entry-box textarea {
+    font-size: 20px;
+    flex: 1;
+    height: 100%;
+    overflow-y: auto;
+    scrollbar-width: none;
+    max-width: auto;
+    resize: none;
+    padding: 10px 20px 5px 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.CreateNote .entry-box textarea:focus {
+    outline: none;
+}
+
+.CreateNote .entry-box img {
+    position: absolute;
+    top: 70%;
+    right: 35px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.CreateNote .entry-box textarea::placeholder {
+    font-size: 20px;
+    color: #999;
+}
+
+.CreateNote .entry-box img.active {
+    filter: brightness(0) saturate(100%) invert(29%) sepia(95%) saturate(4142%) hue-rotate(198deg) brightness(95%) contrast(98%);
+  }
+
+@media (max-width:640px){
+    .showNotes{
+        width:100%;
+    }
+
+    .CreateNote{
+        height: 100%;
+    }
+
+    .CreateNote .heading-box{
+        height: auto;
+        position: sticky;
+        top:0;
+        z-index: 10;
+    }
+
+    .CreateNote .heading-box .back{
+        display:block;
+        color: white;
+        margin-right:-20px;
+    }
+
+    .CreateNote .content-box{
+        flex: 1;
+        padding: 20px 20px;
+        min-height: unset;
+        max-height: 525px;
+        min-height: 525px;
+        box-sizing: border-box;
+    }
+
+    .CreateNote .entry-box{
+        height: 130px;
+        padding: 10px;
+        position: sticky;
+        bottom: 0;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+    }
+
+    .CreateNote .entry-box textarea {
+        height: 100%;
+        padding: 10px 10px;
+        border-radius: 10px;
+        background-color: white;
+    }
+
+    .CreateNote .entry-box img{
+        width: 24px;
+        height: 24px;
+        right:5%;
+        /* margin-left: 5px; */
+        cursor: pointer;
+    }
+
+    .CreateNote .entry-box textarea::placeholder{
+        font-size: 16px;
+        color:#999;
+    }
+}

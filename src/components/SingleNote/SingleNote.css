@@ -1,0 +1,110 @@
+.notes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+    height: 100%;
+    overflow-y: scroll;
+    scrollbar-width: smooth;
+    width: 100%;
+}
+
+.notes-container::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+}
+
+.notes-container::-webkit-scrollbar-track {
+    background: #000000;
+    border-radius: 10px;
+}
+
+.notes-container::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+
+.notes-container::-webkit-scrollbar-button{
+    height: 0;
+    width: 0;
+    display: none;
+}
+
+
+
+.Single-Note {
+    width: 97%;
+    height: auto;
+    padding: 10px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 5px 10px 5px rgba(166, 165, 165, 0.5);
+    border-radius: 5px;
+    margin-bottom: 16px;
+}
+
+.Single-Note .Note-content {
+    font-size: 17px;
+    text-align: left;
+    letter-spacing: 0.3px;
+    line-height: 1.5;
+    margin: 10px 0 20px 0;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.Single-Note .Note-CreateInfo {
+    width: 100%;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    margin: 5px 0 5px 0;
+    text-align: right;
+}
+
+.Single-Note .Note-CreateInfo .dot {
+    font-size: 20px;
+    margin: 0 7px;
+}
+
+.empty-notes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #888;
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media(max-width:640px){
+    .Single-Note .Note-content{
+        font-size: 16px;
+        margin: 7px 0 15px 0;
+        line-height: 1.2;
+        letter-spacing: 0.3;
+    }
+
+    .Single-Note .Note-CreateInfo{
+        font-size: 16px;
+        letter-spacing: 0.2;
+        margin:3px 0 3px 0;
+    }
+
+    .Single-Note .Note-CreateInfo .dot{
+        font-size: 18px;
+        margin: 0 6px;
+    }
+    
+    .empty-notes {
+        font-size: 14px;
+    }
+}

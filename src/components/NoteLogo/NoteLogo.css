@@ -1,0 +1,27 @@
+.Note-logo{
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+}
+
+.Note-logo p{
+    font-size: 25px;
+    color: white;
+    font-weight: 550;
+}
+
+@media(max-width:640px){
+    .Note-logo{
+        width:60px;
+        height: 60px;
+        margin-left: 10px;
+    }
+
+    .Note-logo p{
+        font-size: 25px;
+    }
+}

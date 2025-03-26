@@ -1,0 +1,17 @@
+.Note-heading{
+    width:60%;
+}
+
+.Note-heading p{
+    font-size: 20px;
+    font-weight: 550;
+    text-align:start;
+}
+
+@media(max-width:640px){
+
+    .Note-heading{
+        margin-left: -20px;
+        text-align: center;
+    }
+}

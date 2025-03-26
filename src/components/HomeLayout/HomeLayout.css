@@ -1,0 +1,64 @@
+.Home{
+    width:75%;
+    height: 100%;
+    /* border: 2px solid black; */
+    background-color: #DAE5F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Home .Logo{
+    width: 50%;
+    height: 50%;
+    padding:100px 0 10px 0;
+    /* border: 2px solid brown; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Home .upper-slogan{
+    width: 100%;
+    height: 120px;
+    /* border: 2px solid pink; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+}
+
+.Home .upper-slogan p:nth-child(1){
+    padding-top: 10px;
+    /* border:2px solid blue; */
+    font-size: 50px;
+    font-weight: 550;
+}
+
+.Home .upper-slogan p:nth-child(2){
+    width:50%;
+    font-weight:500;
+}
+
+.Home span{
+    width:100%;
+    height: 220px;
+    gap:10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 10px;
+}
+
+.Home span img{
+    width: 20px;
+}
+
+@media (max-width:640px) {
+    .Home{
+        display: none;
+    }
+}
